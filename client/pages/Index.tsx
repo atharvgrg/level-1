@@ -7,7 +7,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white text-black">
       {/* Professional Header with Logo */}
-      <header className="print-header bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 text-white py-8 page-break-avoid">
+      <header className="print-header bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 text-white py-6 page-break-avoid">
         <div className="max-w-5xl mx-auto px-6">
           {/* Logo Design */}
           <div className="text-center mb-8">
