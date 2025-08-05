@@ -138,9 +138,9 @@ const Index = () => {
               </h2>
             </div>
             
-            <div className="p-8 page-break-avoid">
-              <div className="mb-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
+            <div className="p-6 page-break-avoid">
+              <div className="mb-4">
+                <h3 className="text-xl font-bold text-gray-800 mb-3 flex items-center">
                   🔢 Encoded Binary Sequence
                 </h3>
                 <div className="bg-gray-100 border border-gray-300 rounded-lg p-4">
@@ -175,18 +175,18 @@ const Index = () => {
         </section>
 
         {/* Segment 2 */}
-        <section className="print-section page-break mb-12">
+        <section className="print-section page-break mb-8">
           <div className="border-2 border-gray-200 rounded-lg overflow-hidden">
-            <div className="print-segment-header print-segment-2 bg-gradient-to-r from-blue-600 to-cyan-700 text-white p-6">
+            <div className="print-segment-header print-segment-2 bg-gradient-to-r from-blue-600 to-cyan-700 text-white p-4">
               <h2 className="text-2xl font-bold flex items-center">
                 <span className="bg-white text-blue-600 rounded-full w-10 h-10 flex items-center justify-center mr-4 text-lg font-bold">2</span>
                 SEGMENT 2: SET THEORY DOMAIN RESOLUTION
               </h2>
             </div>
             
-            <div className="p-8 page-break-avoid">
-              <div className="mb-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">🧮 Mathematical Set Operations</h3>
+            <div className="p-6 page-break-avoid">
+              <div className="mb-4">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">🧮 Mathematical Set Operations</h3>
                 <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
                   <p className="text-blue-800 mb-3">
                     Decode characters using set intersection operations. Each character is determined by finding A ∩ B.
@@ -260,18 +260,18 @@ const Index = () => {
         </section>
 
         {/* Segment 3 */}
-        <section className="print-section page-break mb-12">
+        <section className="print-section page-break mb-8">
           <div className="border-2 border-gray-200 rounded-lg overflow-hidden">
-            <div className="print-segment-header print-segment-3 bg-gradient-to-r from-purple-600 to-violet-700 text-white p-6">
+            <div className="print-segment-header print-segment-3 bg-gradient-to-r from-purple-600 to-violet-700 text-white p-4">
               <h2 className="text-2xl font-bold flex items-center">
                 <span className="bg-white text-purple-600 rounded-full w-10 h-10 flex items-center justify-center mr-4 text-lg font-bold">3</span>
                 SEGMENT 3: ASCII IDENTIFIER CONVERSION
               </h2>
             </div>
             
-            <div className="p-8 page-break-avoid">
-              <div className="mb-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">🔢 Encoded ASCII Sequence</h3>
+            <div className="p-6 page-break-avoid">
+              <div className="mb-4">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">🔢 Encoded ASCII Sequence</h3>
                 <div className="bg-gray-100 border border-gray-300 rounded-lg p-4">
                   <code className="text-sm font-mono break-all block">
                     105 97 109 121 97 115 104 106 97 105 110 49
@@ -305,18 +305,18 @@ const Index = () => {
         </section>
 
         {/* Segment 4 */}
-        <section className="print-section page-break mb-12">
+        <section className="print-section page-break mb-8">
           <div className="border-2 border-gray-200 rounded-lg overflow-hidden">
-            <div className="print-segment-header print-segment-4 bg-gradient-to-r from-orange-600 to-red-700 text-white p-6">
+            <div className="print-segment-header print-segment-4 bg-gradient-to-r from-orange-600 to-red-700 text-white p-4">
               <h2 className="text-2xl font-bold flex items-center">
                 <span className="bg-white text-orange-600 rounded-full w-10 h-10 flex items-center justify-center mr-4 text-lg font-bold">4</span>
                 SEGMENT 4: REPOSITORY IDENTIFICATION
               </h2>
             </div>
             
-            <div className="p-8 page-break-avoid">
-              <div className="mb-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">🗂️ Repository Selection Protocol</h3>
+            <div className="p-6 page-break-avoid">
+              <div className="mb-4">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">🗂️ Repository Selection Protocol</h3>
                 <div className="bg-orange-50 border border-orange-200 rounded-lg p-4 mb-6">
                   <p className="text-orange-800 mb-3">
                     Identify the correct repository name based on system characteristics. The repository contains 
@@ -382,7 +382,7 @@ const Index = () => {
         </section>
 
         {/* Final Instructions */}
-        <section className="print-section mb-12">
+        <section className="print-section mb-8">
           <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-lg p-8">
             <div className="text-center mb-6">
               <h2 className="text-2xl font-bold">🏁 ASSEMBLY PROTOCOL</h2>
