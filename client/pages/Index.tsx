@@ -80,7 +80,7 @@ const Index = () => {
         </section>
 
         {/* Segment 2 */}
-        <section className="mb-8">
+        <section className="mb-8 print-together page-break">
           <h2 className="text-xl font-bold mb-4 border-b border-black pb-2">SEGMENT 2: SET THEORY OPERATIONS</h2>
           
           <h3 className="font-bold mb-2">Decoding Instructions:</h3>
