@@ -53,10 +53,10 @@ const Index = () => {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-5xl mx-auto px-6 py-8">
-        
+      <main className="max-w-5xl mx-auto px-4 py-6">
+
         {/* Mission Overview */}
-        <section className="print-section page-break-avoid mb-12">
+        <section className="print-section page-break-avoid mb-8">
           <div className="bg-gray-50 border-2 border-gray-200 rounded-lg p-8">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-gray-800 mb-4">🎯 MISSION BRIEFING</h2>
