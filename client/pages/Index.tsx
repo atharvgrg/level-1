@@ -130,8 +130,8 @@ const Index = () => {
 
             <div className="bg-gray-50 p-4 border border-gray-300">
               <h4 className="font-bold">Character 9:</h4>
-              <p>O = {/, \, |, ~} ; P = {!, /, ?, @}</p>
-              <p><strong>O ∩ P = {/}</strong> → Take the symbol: <strong>/</strong></p>
+              <p>O = {`{/, \\, |, ~}`} ; P = {`{!, /, ?, @}`}</p>
+              <p><strong>O ∩ P = {`{/}`}</strong> → Take the symbol: <strong>/</strong></p>
             </div>
           </div>
 
