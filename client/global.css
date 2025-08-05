@@ -105,90 +105,223 @@
   }
 }
 
-/* PDF Print Optimization */
+/* PDF Print Optimization for Letter Size Portrait */
 @media print {
   * {
     -webkit-print-color-adjust: exact !important;
     color-adjust: exact !important;
     print-color-adjust: exact !important;
+    box-sizing: border-box !important;
+  }
+
+  html, body {
+    height: auto !important;
+    overflow: visible !important;
   }
 
   body {
     background: white !important;
     color: black !important;
-    font-size: 12pt;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
+    font-family: 'Times New Roman', serif !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
   }
 
+  /* Letter size portrait: 8.5" x 11" */
   @page {
-    margin: 0.5in;
-    size: A4;
+    size: letter portrait;
+    margin: 0.75in 0.5in;
+    font-family: 'Times New Roman', serif;
   }
 
+  /* Page break controls */
   .page-break {
-    page-break-before: always;
-    break-before: page;
+    page-break-before: always !important;
+    break-before: page !important;
   }
 
   .page-break-avoid {
-    page-break-inside: avoid;
-    break-inside: avoid;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
 
   .no-print {
     display: none !important;
   }
 
-  /* Force gradients to print as solid colors */
+  /* Header optimization */
   .print-header {
-    background: #1e40af !important;
-    background-image: none !important;
+    background: linear-gradient(90deg, #1e293b 0%, #1e40af 50%, #3730a3 100%) !important;
+    color: white !important;
+    padding: 1rem !important;
+    margin-bottom: 0.5rem !important;
   }
 
-  .print-segment-header {
-    background-image: none !important;
+  /* Segment headers with solid colors for print */
+  .print-segment-1 {
+    background: #059669 !important;
+    color: white !important;
+  }
+  .print-segment-2 {
+    background: #2563eb !important;
+    color: white !important;
+  }
+  .print-segment-3 {
+    background: #7c3aed !important;
+    color: white !important;
+  }
+  .print-segment-4 {
+    background: #ea580c !important;
+    color: white !important;
   }
 
-  .print-segment-1 { background: #059669 !important; }
-  .print-segment-2 { background: #2563eb !important; }
-  .print-segment-3 { background: #7c3aed !important; }
-  .print-segment-4 { background: #ea580c !important; }
-
-  /* Ensure text prints in black */
-  h1, h2, h3, h4, h5, h6 {
-    color: black !important;
-    page-break-after: avoid;
-    break-after: avoid;
+  /* Typography for print */
+  h1 {
+    font-size: 24pt !important;
+    font-weight: bold !important;
+    margin: 0.5rem 0 !important;
+    text-align: center !important;
+    color: #059669 !important;
   }
 
+  h2 {
+    font-size: 16pt !important;
+    font-weight: bold !important;
+    margin: 1rem 0 0.5rem 0 !important;
+    page-break-after: avoid !important;
+  }
+
+  h3 {
+    font-size: 14pt !important;
+    font-weight: bold !important;
+    margin: 0.75rem 0 0.25rem 0 !important;
+    page-break-after: avoid !important;
+  }
+
+  h4, h5 {
+    font-size: 12pt !important;
+    font-weight: bold !important;
+    margin: 0.5rem 0 0.25rem 0 !important;
+    page-break-after: avoid !important;
+  }
+
+  p, li {
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+    margin: 0.25rem 0 !important;
+  }
+
+  /* Layout adjustments */
+  .max-w-5xl {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .px-6, .px-8 {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  .py-8, .py-12 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+
+  .mb-12, .mb-8 {
+    margin-bottom: 0.75rem !important;
+  }
+
+  /* Grid adjustments for print */
+  .grid {
+    display: block !important;
+  }
+
+  .md\:grid-cols-2 > div {
+    width: 100% !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  /* Code blocks optimization */
+  code {
+    background: #f8f9fa !important;
+    border: 1px solid #dee2e6 !important;
+    padding: 2pt 4pt !important;
+    border-radius: 2pt !important;
+    font-size: 10pt !important;
+    font-family: 'Courier New', monospace !important;
+    word-break: break-all !important;
+  }
+
+  /* Remove visual effects for print */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    backdrop-filter: none !important;
+  }
+
+  /* Border adjustments */
+  .border, .border-2 {
+    border: 1pt solid #000 !important;
+  }
+
+  .border-gray-200, .border-gray-300 {
+    border-color: #666 !important;
+  }
+
+  /* Background colors for print */
+  .bg-gray-50, .bg-blue-50, .bg-green-50, .bg-purple-50, .bg-orange-50 {
+    background: #f8f9fa !important;
+  }
+
+  .bg-white {
+    background: white !important;
+  }
+
+  /* Ensure proper spacing for segments */
+  .print-section {
+    margin-bottom: 1rem !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Logo and icons adjustments */
+  svg {
+    width: 12pt !important;
+    height: 12pt !important;
+  }
+
+  /* Footer adjustments */
+  footer {
+    margin-top: 1rem !important;
+    padding: 0.5rem !important;
+    background: #1e293b !important;
+    color: white !important;
+  }
+
+  /* Text color overrides for specific elements */
   .text-white {
     color: white !important;
   }
 
-  /* Print-friendly spacing */
-  .print-section {
-    margin-bottom: 1in;
+  .text-green-600, .text-green-800 {
+    color: #059669 !important;
   }
 
-  /* Code blocks */
-  code {
-    background: #f8f9fa !important;
-    border: 1px solid #dee2e6 !important;
-    padding: 4px 6px !important;
-    border-radius: 4px !important;
-    font-size: 11pt !important;
+  .text-blue-600, .text-blue-800 {
+    color: #2563eb !important;
   }
 
-  /* Remove shadows and effects */
-  * {
-    box-shadow: none !important;
-    text-shadow: none !important;
+  .text-purple-600, .text-purple-800 {
+    color: #7c3aed !important;
   }
 
-  /* Ensure borders print */
-  .border {
-    border: 1px solid #000 !important;
+  .text-orange-600, .text-orange-800 {
+    color: #ea580c !important;
+  }
+
+  .text-gray-700, .text-gray-800 {
+    color: #374151 !important;
   }
 }
