@@ -107,54 +107,88 @@
 
 /* PDF Print Optimization */
 @media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
   body {
     background: white !important;
     color: black !important;
-    font-size: 11pt;
-    line-height: 1.4;
+    font-size: 12pt;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+
+  @page {
+    margin: 0.5in;
+    size: A4;
   }
 
   .page-break {
     page-break-before: always;
+    break-before: page;
+  }
+
+  .page-break-avoid {
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
 
   .no-print {
     display: none !important;
   }
 
-  /* Ensure proper margins for printing */
-  @page {
-    margin: 0.75in;
-    size: A4;
+  /* Force gradients to print as solid colors */
+  .print-header {
+    background: #1e40af !important;
+    background-image: none !important;
   }
 
-  /* Optimize text for print */
+  .print-segment-header {
+    background-image: none !important;
+  }
+
+  .print-segment-1 { background: #059669 !important; }
+  .print-segment-2 { background: #2563eb !important; }
+  .print-segment-3 { background: #7c3aed !important; }
+  .print-segment-4 { background: #ea580c !important; }
+
+  /* Ensure text prints in black */
   h1, h2, h3, h4, h5, h6 {
     color: black !important;
     page-break-after: avoid;
+    break-after: avoid;
   }
 
-  /* Avoid page breaks inside important content */
-  .print-together {
-    page-break-inside: avoid;
+  .text-white {
+    color: white !important;
   }
 
-  /* Ensure borders and backgrounds print */
-  * {
-    -webkit-print-color-adjust: exact !important;
-    color-adjust: exact !important;
+  /* Print-friendly spacing */
+  .print-section {
+    margin-bottom: 1in;
   }
 
-  /* Optimize code blocks for print */
+  /* Code blocks */
   code {
-    background: #f5f5f5 !important;
-    border: 1px solid #ddd !important;
-    padding: 2px 4px !important;
-    border-radius: 2px !important;
+    background: #f8f9fa !important;
+    border: 1px solid #dee2e6 !important;
+    padding: 4px 6px !important;
+    border-radius: 4px !important;
+    font-size: 11pt !important;
   }
 
-  /* Remove box shadows for cleaner print */
+  /* Remove shadows and effects */
   * {
     box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Ensure borders print */
+  .border {
+    border: 1px solid #000 !important;
   }
 }
