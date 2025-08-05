@@ -141,7 +141,7 @@ const Index = () => {
         </section>
 
         {/* Segment 3 */}
-        <section className="mb-8">
+        <section className="mb-8 print-together">
           <h2 className="text-xl font-bold mb-4 border-b border-black pb-2">SEGMENT 3: USERNAME ASCII CONVERSION</h2>
           
           <div className="bg-gray-50 p-4 border border-gray-300 mb-4">
