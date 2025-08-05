@@ -129,9 +129,9 @@ const Index = () => {
         </section>
 
         {/* Segment 1 */}
-        <section className="print-section page-break mb-12">
+        <section className="print-section page-break mb-8">
           <div className="border-2 border-gray-200 rounded-lg overflow-hidden">
-            <div className="print-segment-header print-segment-1 bg-gradient-to-r from-green-600 to-emerald-700 text-white p-6">
+            <div className="print-segment-header print-segment-1 bg-gradient-to-r from-green-600 to-emerald-700 text-white p-4">
               <h2 className="text-2xl font-bold flex items-center">
                 <span className="bg-white text-green-600 rounded-full w-10 h-10 flex items-center justify-center mr-4 text-lg font-bold">1</span>
                 SEGMENT 1: BINARY PROTOCOL DECODING
