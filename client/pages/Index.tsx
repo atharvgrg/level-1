@@ -166,7 +166,7 @@ const Index = () => {
         </section>
 
         {/* Segment 4 */}
-        <section className="mb-8">
+        <section className="mb-8 print-together page-break">
           <h2 className="text-xl font-bold mb-4 border-b border-black pb-2">SEGMENT 4: OPERATING SYSTEM IDENTIFICATION</h2>
           
           <h3 className="font-bold mb-2">Instructions:</h3>
