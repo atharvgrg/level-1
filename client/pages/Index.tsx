@@ -92,40 +92,40 @@ const Index = () => {
           <div className="space-y-4">
             <div className="bg-gray-50 p-4 border border-gray-300">
               <h4 className="font-bold">Character 1:</h4>
-              <p>A = {f, g, h, i, j} ; B = {a, e, g, i, o, u}</p>
-              <p><strong>A ∩ B = {g, i}</strong> → Take the first letter: <strong>g</strong></p>
+              <p>A = {`{f, g, h, i, j}`} ; B = {`{a, e, g, i, o, u}`}</p>
+              <p><strong>A ∩ B = {`{g, i}`}</strong> → Take the first letter: <strong>g</strong></p>
             </div>
 
             <div className="bg-gray-50 p-4 border border-gray-300">
               <h4 className="font-bold">Character 2:</h4>
-              <p>C = {h, i, t, u, v} ; D = {a, e, i, o, u}</p>
-              <p><strong>C ∩ D = {i, u}</strong> → Take the first letter: <strong>i</strong></p>
+              <p>C = {`{h, i, t, u, v}`} ; D = {`{a, e, i, o, u}`}</p>
+              <p><strong>C ∩ D = {`{i, u}`}</strong> → Take the first letter: <strong>i</strong></p>
             </div>
 
             <div className="bg-gray-50 p-4 border border-gray-300">
               <h4 className="font-bold">Character 3:</h4>
-              <p>E = {r, s, t, u, v} ; F = {a, e, i, o, t, u}</p>
-              <p><strong>E ∩ F = {t, u}</strong> → Take the first letter: <strong>t</strong></p>
+              <p>E = {`{r, s, t, u, v}`} ; F = {`{a, e, i, o, t, u}`}</p>
+              <p><strong>E ∩ F = {`{t, u}`}</strong> → Take the first letter: <strong>t</strong></p>
             </div>
 
             <div className="bg-gray-50 p-4 border border-gray-300">
               <h4 className="font-bold">Character 4:</h4>
-              <p>G = {h, i, j, k, l} ; H = {g, h, m, n, o}</p>
-              <p><strong>G ∩ H = {h}</strong> → Take the letter: <strong>h</strong></p>
+              <p>G = {`{h, i, j, k, l}`} ; H = {`{g, h, m, n, o}`}</p>
+              <p><strong>G ∩ H = {`{h}`}</strong> → Take the letter: <strong>h</strong></p>
             </div>
 
             <div className="bg-gray-50 p-4 border border-gray-300">
               <h4 className="font-bold">Character 5:</h4>
-              <p>I = {u, v, w, x, y} ; J = {s, t, u, v, w}</p>
-              <p><strong>I ∩ J = {u, v, w}</strong> → Take the first letter: <strong>u</strong></p>
+              <p>I = {`{u, v, w, x, y}`} ; J = {`{s, t, u, v, w}`}</p>
+              <p><strong>I ∩ J = {`{u, v, w}`}</strong> → Take the first letter: <strong>u</strong></p>
             </div>
 
             <div className="bg-gray-50 p-4 border border-gray-300">
               <h4 className="font-bold">Characters 6-8:</h4>
-              <p>K = {a, b, c, d, e} ; L = {b, c, d, e, f}</p>
-              <p><strong>K ∩ L = {b, c, d, e}</strong> → Spell: <strong>b</strong> for "."</p>
-              <p>M = {c, o, m, n, p} ; N = {a, c, m, o, u}</p>
-              <p><strong>M ∩ N = {c, m, o}</strong> → Form: <strong>com</strong></p>
+              <p>K = {`{a, b, c, d, e}`} ; L = {`{b, c, d, e, f}`}</p>
+              <p><strong>K ∩ L = {`{b, c, d, e}`}</strong> → Spell: <strong>b</strong> for "."</p>
+              <p>M = {`{c, o, m, n, p}`} ; N = {`{a, c, m, o, u}`}</p>
+              <p><strong>M ∩ N = {`{c, m, o}`}</strong> → Form: <strong>com</strong></p>
             </div>
 
             <div className="bg-gray-50 p-4 border border-gray-300">
